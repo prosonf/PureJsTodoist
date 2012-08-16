@@ -1,0 +1,700 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ta",
+				"task_text"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"get",
+				"getDom"
+			],
+			[
+				"item",
+				"item_templ"
+			],
+			[
+				"h",
+				"html_list_template"
+			],
+			[
+				"this",
+				"this_"
+			],
+			[
+				"p",
+				"push"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"new",
+				"new_project"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"ht",
+				"html_create_template"
+			],
+			[
+				"proj",
+				"projectA"
+			],
+			[
+				"t",
+				"toHtml"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"Project",
+				"Project"
+			],
+			[
+				"id",
+				"id_sequence"
+			],
+			[
+				"prod",
+				"Product"
+			],
+			[
+				"no",
+				"notice"
+			],
+			[
+				"fla",
+				"flash"
+			],
+			[
+				"find",
+				"find_similar_movies"
+			],
+			[
+				"fi",
+				"find_similar_movies"
+			],
+			[
+				"reve",
+				"reverse"
+			],
+			[
+				"curr",
+				"currency"
+			],
+			[
+				"class",
+				"class_eval"
+			],
+			[
+				"ne",
+				"nextfib"
+			],
+			[
+				"cla",
+				"cla	class .. initialize .. end"
+			],
+			[
+				"b",
+				"bm-	Benchmark.bmbm do .. end"
+			],
+			[
+				"fl",
+				"flavor"
+			],
+			[
+				"deli",
+				"delicious"
+			],
+			[
+				"ca",
+				"calories"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"wo",
+				"words"
+			],
+			[
+				"sort",
+				"sorted"
+			],
+			[
+				"gr",
+				"group"
+			],
+			[
+				"let",
+				"lettersGroup"
+			],
+			[
+				"to",
+				"tournament"
+			],
+			[
+				"tour",
+				"rps_tournament_winner"
+			],
+			[
+				"rp",
+				"rps_game_winner"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"pe",
+				"peopleInvolved"
+			],
+			[
+				"co",
+				"coursesInvolved"
+			],
+			[
+				"in",
+				"involved"
+			],
+			[
+				"lo",
+				"lookup"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"ad",
+				"add_to_index"
+			],
+			[
+				"sp",
+				"splitted"
+			],
+			[
+				"de",
+				"depth"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "modit_version/js/pureJsTodoist.js",
+			"settings":
+			{
+				"buffer_size": 1600,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/js/purejstist/task.js",
+			"settings":
+			{
+				"buffer_size": 2702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/spec/TaskSpec.js",
+			"settings":
+			{
+				"buffer_size": 982,
+				"line_ending": "Unix",
+				"name": "// TaskSpec.js"
+			}
+		},
+		{
+			"file": "modit_version/SpecRunner.html",
+			"settings":
+			{
+				"buffer_size": 1779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/js/purejstist/project.js",
+			"settings":
+			{
+				"buffer_size": 3114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/spec/ProjectSpec.js",
+			"settings":
+			{
+				"buffer_size": 1544,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/ListViewSpec.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/ListView.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/ProjectSpec.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/pureJsTodoistSpec.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/label.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/js/purejstist/project.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/index.html",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/js/pureJsTodoist.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/js/purejstist/task.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/js/purejstist/label.js",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/line_items/create.js.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/store/index.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/assets/javascripts/application.js",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/AgileWebDev_Book.sublime-project",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/line_items/_line_item.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/layouts/application.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/controllers/store_controller.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/carts/show.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/controllers/line_items_controller.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/models/cart.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/assets/stylesheets/carts.css.scss",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/models/line_item.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/products/show.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120719161252_combine_items_in_cart.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120719160317_add_quantity_to_line_items.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/test/functional/line_items_controller_test.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/assets/stylesheets/store.css.scss",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/models/product.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/test/functional/store_controller_test.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/store/index_.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/assets/stylesheets/application.css.scss",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/Gemfile",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/config/routes.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/test/unit/product_test.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/test/fixtures/products.yml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/store/index.html.erb",
+		"/media/data/desarrollo/ruby/doc/AgileWebDev_Book/code/rails32/depot_d/app/assets/stylesheets/store.css.scss",
+		"/media/data/desarrollo/ruby/doc/AgileWebDev_Book/code/rails32/depot_d/app/views/store/index.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/products/index.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/test/functional/products_controller_test.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120709142204_create_products.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/assets/stylesheets/products.css.scss",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/app/views/layouts/application.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/seeds.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120709140412_create_products.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120709134118_create_products.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120709124728_create_products.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/depot/db/migrate/20120708064553_create_products.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/views/say/hello.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/controllers/say_controller.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/views/say/goodbye.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/views/greet/world.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/config/routes.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/views/say/__hello.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/controllers/greet_controller.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/views/greet/___world.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/Gemfile",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/app/views/say/goodbye​.html.erb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/config/application.rb",
+		"/media/data/desarrollo/ruby/proyectos/AgileWebDev_Book/demo/script/rails",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/models/movie.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/features/support/env.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/spec/spec_helper.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/helpers/movies_helper.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/views/movies/find_with_same_director.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/views/movies/show.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/views/movies/index.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/features/support/paths.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/spec/models/movie_spec.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/app/models/movie.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/newColumnDirector.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/views/movies/find_similar_movies.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/app/views/movies/edit.html.haml",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/features/step_definitions/movie_steps.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/Log.txt",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes/Gemfile",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/features/support/paths.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/features/step_definitions/web_steps.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/Gemfile",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/quiz1/quiz1.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/examples/my_reference.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/features/filter_movie_list.feature",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/Gemfile.lock",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw3_rottenpotatoes/features/step_definitions/movie_steps.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/part1.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/part2.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/part3.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/part4.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/examples/ex1.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/part5.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw2/part3.txt",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/examples/fib_pormicuenta.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/part6.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/examples/bank_account_example.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/sandbox/fib.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw1/ex1.rb",
+		"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/saasCoursera.sublime-project",
+		"/home/pedro/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/pedro/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/media/data/desarrollo/python/proyectos/cs101_udacity/Homework3_8.py",
+		"/media/data/desarrollo/python/proyectos/cs101_udacity/Homework3_5.py",
+		"/media/data/desarrollo/python/proyectos/cs101_udacity/Homework3_7.py",
+		"/media/data/desarrollo/android/proyectos/DojoTweetView/assets/www/js/tweetview/resources/images/refresh.png",
+		"/media/data/desarrollo/android/proyectos/DojoTweetView/assets/www/js/dojo/cldr/nls/gregorian.js",
+		"/media/data/desarrollo/android/proyectos/DojoTweetView/assets/www/css/main.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/hw4_rottenpotatoes",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"objects",
+			"projects",
+			"new_task",
+			" #{",
+			");\n        d.innerHTML = this.toHtml();",
+			"createElement",
+			"updateInterval",
+			"lib/jasmine-1.1.0.rc1",
+			"return",
+			"log",
+			"project",
+			"item",
+			"line_item",
+			"oddness",
+			"movie_path",
+			"new",
+			"find_similar_movies",
+			"I follow",
+			"follow",
+			"# ",
+			"/",
+			"nokogiri\n\nnokogiri",
+			"		",
+			"puts",
+			"numbers",
+			"formatTi",
+			"listNode",
+			"ListItem",
+			"tweetviewList",
+			"serviceUrl",
+			"images",
+			"js/tweetview/resources/images",
+			"images",
+			"general"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"items",
+			"objects",
+			"jasmine-core",
+			"debug",
+			"task",
+			"line_item",
+			"find_with_same_director",
+			"valid",
+			"js/tweetview/resources/images",
+			"images",
+			"js/tweetview/resources/images"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "modit_version/js/pureJsTodoist.js",
+					"settings":
+					{
+						"buffer_size": 1600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								847,
+								847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "modit_version/js/purejstist/task.js",
+					"settings":
+					{
+						"buffer_size": 2702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1569,
+								1569
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "modit_version/spec/TaskSpec.js",
+					"settings":
+					{
+						"buffer_size": 982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// TaskSpec.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "modit_version/SpecRunner.html",
+					"settings":
+					{
+						"buffer_size": 1779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1353,
+								1353
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "modit_version/js/purejstist/project.js",
+					"settings":
+					{
+						"buffer_size": 3114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3109,
+								3109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 557.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "modit_version/spec/ProjectSpec.js",
+					"settings":
+					{
+						"buffer_size": 1544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1032,
+								1032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/media/data/desarrollo/ruby/proyectos/SaaSCoursera/saasCoursera.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true
+}
