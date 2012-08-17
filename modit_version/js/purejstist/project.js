@@ -1,13 +1,14 @@
 // project.js
 
-modit("purejstodoist.project", ['util'], function(u) {
+modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function(u, TaskList) {
+  "use strict";
   // Secuence to create projects
-  var id_sequence = 1;
+  var id_sequence = 1,
 
   // Template for rendering a project.
-  var html_template = '<span class="project" id="project_#{id}">#{name}</span>';
+  html_template = '<span class="project" id="project_#{id}">#{name}</span>',
   // Template for the create project form
-  var html_create_template = 
+  html_create_template = 
     '<span class="new_project">'
     + '<label>Add New Project: </label>'
     + '<input type="text" class="purejstodoist_project_name"/>'
@@ -19,12 +20,15 @@ modit("purejstodoist.project", ['util'], function(u) {
     this.id = data.id || id_sequence++;
     this.name = data.name || this.name;
 
+    this.task_list = new TaskList();
+
     this.dom = null;
     this.createElementDOM = null;
-  };
+  }
   Project.prototype = {
     id : null,
     name : '',
+    task_list : null,
     toHtml : function() {
       /** @return HTML with project name, without its task list. */
       return u.substitute(html_template, this);
@@ -35,6 +39,9 @@ modit("purejstodoist.project", ['util'], function(u) {
         this.dom = u.htmlToDom(this.toHtml());
       }
       return this.dom;
+    },
+    addTask : function(new_task) {
+      this.task_list.appendItem(new_task);
     }
   };
   Project.getDOMForCreate = function(callback) {
@@ -86,9 +93,11 @@ modit("purejstodoist.project", ['util'], function(u) {
     appendProject : function(new_project) {
       this.items.push(new_project);
 
-      var item_templ = u.htmlToDom(html_list_item_template);
-      item_templ.appendChild(new_project.getDom());
-      this.dom.insertBefore(item_templ, this.createElementDOM);
+      if (this.dom) {
+        var item_templ = u.htmlToDom(html_list_item_template);
+        item_templ.appendChild(new_project.getDom());
+        this.dom.insertBefore(item_templ, this.createElementDOM);
+      }
     }
   };
   this.exports(ListView);

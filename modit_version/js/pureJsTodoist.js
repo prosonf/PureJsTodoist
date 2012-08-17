@@ -4,57 +4,69 @@
  */
 
 modit('util', function() {
+  "use strict";
+  var doc = window.document;
 
-  function loadScript(src, callback) {
-    var script = document.createElement('script');
-    script.type = "text/javascript";
-    if (callback) script.onload = callback;
-    script.src = src;
-    document.getElementsByTagName('head')[0].appendChild(script);
-    debug('Loading script ' + src + '...');
-  };
   function debug(msg) {
-    if (console && console.debug) console.debug(msg);
-  };
+    if (console && console.debug) { console.debug(msg); }
+  }
+  function loadScript(src, callback) {
+    var script = doc.createElement('script');
+    script.type = "text/javascript";
+    if (callback) { script.onload = callback; }
+    script.src = src;
+    doc.getElementsByTagName('head')[0].appendChild(script);
+    debug('Loading script ' + src + '...');
+  }
+  function loadScripts(scripts, callback) {
+    var loadScr = function(i) {
+      if (scripts[i]) {
+        loadScript(scripts[i], function() {
+          loadScr(++i);
+        });
+      } else if (callback) {callback(); }
+    };
+    loadScr(0);
+  }
   function substitute(template, obj) {
       return template.replace(/\#\{([^\s\:\}]+)(?:\:([^\s\:\}]+))?\}/g, function(match, key){
           return obj[key];
       });
-  };
+  }
   function htmlToDom(html) {
-    var d = document.createElement('div');
+    var d = doc.createElement('div');
     d.innerHTML = html;
     return d.firstChild;
-  };
-  this.exports(loadScript, debug, substitute, htmlToDom);
+  }
+  this.exports(loadScript, loadScripts, debug, substitute, htmlToDom);
 });
 
 modit('purejstodoist', ['util'], function(u) {
-  var dependencies = ['js/purejstist/project.js', 
-    'js/purejstist/task.js', 
-    'js/purejstist/label.js'];
-
-  function loadDependencies(dependencies, callback) {
-    var loadDep = function(i) {
-      if (dependencies[i])
-        u.loadScript(dependencies[i], function() {
-          loadDep(++i);
-        });
-      else if (callback) callback();
+  "use strict";
+  var doc = window.document,
+    dependencies = ['js/purejstist/task.js', 
+      'js/purejstist/project.js', 
+      'js/purejstist/label.js'],
+    container = {
+      dom: doc.getElementById('main'),
+      show: function(dom_to_show) {
+        this.dom.replaceChild(this.dom.firstChild, dom_to_show);
+      }
     };
-    loadDep(0);
-  }
+  this.exports(container);
 
   function init() {
-    loadDependencies(dependencies, function() {
+    u.loadScripts(dependencies, function() {
       u.debug("initialized");
-      var ListView = purejstodoist.project.ListView;
-      this.list_view = new ListView();
-      document.getElementById('main').appendChild(this.list_view.getDom());
-      var TaskListView = purejstodoist.task.ListView;
-      this.task_list_view = new TaskListView();
-      document.getElementById('main').appendChild(this.task_list_view.getDom());
+      if (doc.getElementById('main')) {
+        var ListView = purejstodoist.project.ListView,
+          TaskListView = purejstodoist.task.TaskList,
+          list_view = new ListView(),
+          task_list_view = new TaskListView();
+        doc.getElementById('main').appendChild(list_view.getDom());
+        doc.getElementById('main').appendChild(task_list_view.getDom());
+      }
     });
-  };
+  }
   init();
 });

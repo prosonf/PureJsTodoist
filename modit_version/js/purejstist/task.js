@@ -1,17 +1,17 @@
 // task.js
 
 modit("purejstodoist.task", ['util'], function(util) {
-  var id_sequence = 1;
-
-  // Template for rendering a project.
-  var html_template = '<span class="task" id="task_#{id}">#{text}</span>';
-  // Template for the create task form
-  var html_create_template = 
-    '<span class="new_task">'
-    + '<label>Add New Task: </label>'
-    + '<input type="text" class="purejstodoist_task_text"/>'
-    + '<input type="button" class="purejstodoist_task_button" value="Add!!" />'
-    +'</span>';
+  "use strict";
+  var id_sequence = 1,
+    // Template for rendering a project.
+    html_template = '<span class="task" id="task_#{id}">#{text}</span>',
+    // Template for the create task form
+    html_create_template = 
+      '<span class="new_task">'
+      + '<label>Add New Task: </label>'
+      + '<input type="text" class="purejstodoist_task_text"/>'
+      + '<input type="button" class="purejstodoist_task_button" value="Add!!" />'
+      +'</span>';
 
   function Task(p_data) {
     var data = p_data || {};
@@ -19,7 +19,7 @@ modit("purejstodoist.task", ['util'], function(util) {
     this.text = data.text || '';
 
     this.project = data.project;
-  };
+  }
 
   Task.prototype = {
     toHtml : function() {
@@ -53,13 +53,13 @@ modit("purejstodoist.task", ['util'], function(util) {
 
   var html_list_template = '<ul id="tasks">#{name}\'s Tasks:</ul>';
   var html_list_item_template = '<li></li>';
-  function ListView(p_data) {
+  function TaskList(p_data) {
     var data = p_data || {};
     this.items = data.items || [];
 
     this.dom = null;
   };
-  ListView.prototype = {
+  TaskList.prototype = {
     toHtml : function() {
       return this.getDom().outerHTML;
     },
@@ -82,12 +82,16 @@ modit("purejstodoist.task", ['util'], function(util) {
     },
     appendItem : function(new_item) {
       this.items.push(new_item);
-
-      var item_templ = util.htmlToDom(html_list_item_template);
-      item_templ.appendChild(new_item.getDom());
-      this.dom.insertBefore(item_templ, this.createElementDOM);
+      if (this.dom) {
+        var item_templ = util.htmlToDom(html_list_item_template);
+        item_templ.appendChild(new_item.getDom());
+        this.dom.insertBefore(item_templ, this.createElementDOM);
+      }
+    },
+    size : function() {
+      return this.items.length;
     }
   };
-  this.exports(ListView);
+  this.exports(TaskList);
 
 });
