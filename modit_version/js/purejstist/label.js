@@ -1,11 +1,11 @@
 // label.js
 
-modit("purejstodoist", function() {
+modit("purejstodoist.label", function() {
 
-	var label = function(p_data) {
+	function Label(p_data) {
 		var data = p_data || {};
 		this.name = data.name || '';
 	}
 
-	this.exports(label);
+	this.exports(Label);
 });
