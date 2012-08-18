@@ -9,4 +9,8 @@ describe("pureJsTodoist", function() {
     expect(util).not.toBeUndefined();
   });
 
+  it("should have a load function", function() {
+    expect(purejstodoist.load).not.toBeUndefined();
+  });
+
 });

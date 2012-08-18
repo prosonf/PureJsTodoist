@@ -36,7 +36,7 @@ describe("Project", function() {
     expect(project.task_list.size()).toBe(1);
   });
 
-  it("should render the- list of tasks", function() {
+  it("should render the list of tasks", function() {
     var tast_text = 'task text',
       task = new Task({text : tast_text});
     project.addTask(task);
@@ -74,5 +74,11 @@ describe("ListView", function() {
       projectC = new Project({id: 3, name: new_name});
     listView.appendProject(projectC);
     expect(listView.getDom().innerHTML).toContain(new_name);
+  });
+
+  it("should render a project's task list when clicking that project", function() {
+    spyOn(listView, 'showTaskList');
+    listView.getDom().getElementsByTagName('span')[0].onclick();
+    expect(listView.showTaskList).toHaveBeenCalled();
   });
 });

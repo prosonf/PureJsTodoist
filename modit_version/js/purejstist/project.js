@@ -66,6 +66,7 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
     var data = p_data || {};
     this.items = data.items || [];
     this.desc = data.desc || '';
+    this.container = data.container || {show: function(){}};
 
     this.dom = null;
   };
@@ -80,11 +81,13 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
         var list_templ = u.htmlToDom(html_list_template);
         var data = _.each(this.items, function(item) {
           var item_dom = item_templ.cloneNode(true);
-          item_dom.appendChild(item.getDom());
+          item_dom.appendChild(item.getDom()).onclick = _.bind(this_.showTaskList, this_, [item]);
+          //item_dom.onclick = _.bind(this_.showTaskList, this_);
           list_templ.appendChild(item_dom);
         });
         this.createElementDOM = item_templ.cloneNode(true);
-        this.createElementDOM.appendChild(Project.getDOMForCreate(function(new_project) {this_.appendProject(new_project);}));
+        var appendProject = _.bind(this_.appendProject, this_);
+        this.createElementDOM.appendChild(Project.getDOMForCreate(appendProject));
         list_templ.appendChild(this.createElementDOM);
         this.dom = list_templ;
       }
@@ -95,8 +98,14 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
 
       if (this.dom) {
         var item_templ = u.htmlToDom(html_list_item_template);
-        item_templ.appendChild(new_project.getDom());
+        item_templ.appendChild(new_project.getDom()).onclick = _.bind(this.showTaskList, this);
         this.dom.insertBefore(item_templ, this.createElementDOM);
+      }
+    }, showTaskList : function(project) {
+      if(this.dom && project) {
+        var TaskList = purejstodoist.task.TaskList,
+          task_list = new TaskList({items: project.task_list});
+        this.dom.parentElement.replaceChild(task_list.getDom(), this.dom);
       }
     }
   };
