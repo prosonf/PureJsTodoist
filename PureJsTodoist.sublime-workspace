@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"task",
+				"task_list"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"get",
+				"getDom"
+			],
+			[
+				"lis",
+				"listView"
+			],
+			[
+				"ap",
+				"appendProject"
+			],
+			[
+				"sho",
+				"showTaskList"
+			],
+			[
+				"sh",
+				"showTaskList"
+			],
+			[
+				"item",
+				"item_dom"
+			],
+			[
+				"to",
+				"toBeUndefined"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
 				"fi",
 				"firstChild"
 			],
@@ -28,18 +68,6 @@
 				"fun	Function"
 			],
 			[
-				"ap",
-				"appendChild"
-			],
-			[
-				"get",
-				"getDom"
-			],
-			[
-				"item",
-				"item_templ"
-			],
-			[
 				"h",
 				"html_list_template"
 			],
@@ -50,10 +78,6 @@
 			[
 				"p",
 				"push"
-			],
-			[
-				"pro",
-				"projects"
 			],
 			[
 				"f",
@@ -70,10 +94,6 @@
 			[
 				"t",
 				"toHtml"
-			],
-			[
-				"fu",
-				"function"
 			],
 			[
 				"Project",
@@ -152,10 +172,6 @@
 				"lettersGroup"
 			],
 			[
-				"to",
-				"tournament"
-			],
-			[
 				"tour",
 				"rps_tournament_winner"
 			],
@@ -204,43 +220,26 @@
 	"buffers":
 	[
 		{
+			"file": "modit_version/spec/containerSpec.js",
+			"settings":
+			{
+				"buffer_size": 690,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/spec/pureJsTodoistSpec.js",
+			"settings":
+			{
+				"buffer_size": 449,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "modit_version/js/pureJsTodoist.js",
 			"settings":
 			{
-				"buffer_size": 2055,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "modit_version/js/purejstist/task.js",
-			"settings":
-			{
-				"buffer_size": 2997,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "modit_version/spec/TaskSpec.js",
-			"settings":
-			{
-				"buffer_size": 982,
-				"line_ending": "Unix",
-				"name": "// TaskSpec.js"
-			}
-		},
-		{
-			"file": "modit_version/SpecRunner.html",
-			"settings":
-			{
-				"buffer_size": 1779,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "modit_version/js/purejstist/project.js",
-			"settings":
-			{
-				"buffer_size": 3343,
+				"buffer_size": 966,
 				"line_ending": "Unix"
 			}
 		},
@@ -248,7 +247,23 @@
 			"file": "modit_version/spec/ProjectSpec.js",
 			"settings":
 			{
-				"buffer_size": 2472,
+				"buffer_size": 3255,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/js/Container.js",
+			"settings":
+			{
+				"buffer_size": 889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modit_version/js/purejstist/project.js",
+			"settings":
+			{
+				"buffer_size": 3828,
 				"line_ending": "Unix"
 			}
 		}
@@ -277,14 +292,21 @@
 	},
 	"file_history":
 	[
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/task.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/project.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/Container.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/SpecRunner.html",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/ProjectSpec.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/TaskSpec.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/index.html",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/util.js",
+		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/label.js",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/conf.watchr",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/README.md",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/README.markdown",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/ListViewSpec.js",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/ListView.js",
-		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/ProjectSpec.js",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/spec/pureJsTodoistSpec.js",
-		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/modit_version/js/purejstist/label.js",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/js/purejstist/project.js",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/index.html",
 		"/media/data/desarrollo/javascript/proyectos/PureJsTodoist/js/pureJsTodoist.js",
@@ -473,23 +495,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "modit_version/js/pureJsTodoist.js",
+					"file": "modit_version/spec/containerSpec.js",
 					"settings":
 					{
-						"buffer_size": 2055,
+						"buffer_size": 690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1550,
-								1550
+								13,
+								13
 							]
 						],
 						"settings":
@@ -499,58 +521,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 508.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "modit_version/js/purejstist/task.js",
+					"file": "modit_version/spec/pureJsTodoistSpec.js",
 					"settings":
 					{
-						"buffer_size": 2997,
+						"buffer_size": 449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								550,
-								550
+								449,
+								449
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "modit_version/spec/TaskSpec.js",
+					"file": "modit_version/js/pureJsTodoist.js",
 					"settings":
 					{
-						"buffer_size": 982,
+						"buffer_size": 966,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								917,
+								917
 							]
 						],
 						"settings":
 						{
-							"auto_name": "// TaskSpec.js",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -563,46 +582,46 @@
 				},
 				{
 					"buffer": 3,
-					"file": "modit_version/SpecRunner.html",
+					"file": "modit_version/spec/ProjectSpec.js",
 					"settings":
 					{
-						"buffer_size": 1779,
+						"buffer_size": 3255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1605,
-								1605
+								1842,
+								1842
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 165.0,
+						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "modit_version/js/purejstist/project.js",
+					"file": "modit_version/js/Container.js",
 					"settings":
 					{
-						"buffer_size": 3343,
+						"buffer_size": 889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								430,
-								430
+								300,
+								300
 							]
 						],
 						"settings":
@@ -612,25 +631,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "modit_version/spec/ProjectSpec.js",
+					"file": "modit_version/js/purejstist/project.js",
 					"settings":
 					{
-						"buffer_size": 2472,
+						"buffer_size": 3828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1258,
-								1258
+								3142,
+								3142
 							]
 						],
 						"settings":
@@ -640,7 +659,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

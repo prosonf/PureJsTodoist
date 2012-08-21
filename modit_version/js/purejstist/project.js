@@ -12,7 +12,7 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
     '<span class="new_project">'
     + '<label>Add New Project: </label>'
     + '<input type="text" class="purejstodoist_project_name"/>'
-    + '<input type="button" class="purejstodoist_project_button" value="Create!!" />'
+    + '<button class="purejstodoist_project_button">Create!!</button>'
     +'</span>';
 
   function Project(p_data) {
@@ -20,7 +20,7 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
     this.id = data.id || id_sequence++;
     this.name = data.name || this.name;
 
-    this.task_list = new TaskList();
+    this.task_list = new TaskList({project: this});
 
     this.dom = null;
     this.createElementDOM = null;
@@ -60,8 +60,9 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
   }
   this.exports(Project);
 
-  var html_list_template = '<ul id="projects">Projects:</ul>';
-  var html_list_item_template = '<li></li>';
+  var html_list_template = '<ul id="projects">Projects:</ul>',
+    html_list_item_template = '<li></li>',
+    html_task_list_template = '<div id="task_list"><button class="purejstodoist_project_back_button">Back</button>#{name}\'s tasks</div>';
   function ListView(p_data) {
     var data = p_data || {};
     this.items = data.items || [];
@@ -81,8 +82,7 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
         var list_templ = u.htmlToDom(html_list_template);
         var data = _.each(this.items, function(item) {
           var item_dom = item_templ.cloneNode(true);
-          item_dom.appendChild(item.getDom()).onclick = _.bind(this_.showTaskList, this_, [item]);
-          //item_dom.onclick = _.bind(this_.showTaskList, this_);
+          item_dom.appendChild(item.getDom()).onclick = _.bind(this_.showTaskList, this_, item);
           list_templ.appendChild(item_dom);
         });
         this.createElementDOM = item_templ.cloneNode(true);
@@ -98,15 +98,22 @@ modit("purejstodoist.project", ['util', 'purejstodoist.task.TaskList'], function
 
       if (this.dom) {
         var item_templ = u.htmlToDom(html_list_item_template);
-        item_templ.appendChild(new_project.getDom()).onclick = _.bind(this.showTaskList, this);
+        item_templ.appendChild(new_project.getDom()).onclick = _.bind(this.showTaskList, this, new_project);
         this.dom.insertBefore(item_templ, this.createElementDOM);
       }
-    }, showTaskList : function(project) {
-      if(this.dom && project) {
-        var TaskList = purejstodoist.task.TaskList,
-          task_list = new TaskList({items: project.task_list});
-        this.dom.parentElement.replaceChild(task_list.getDom(), this.dom);
+    },
+    showTaskList : function(project) {
+      if(this.container && project) {
+        var this_ = this,
+          task_list_dom = u.htmlToDom(u.substitute(html_task_list_template, project));
+        task_list_dom.getElementsByClassName('purejstodoist_project_back_button')[0].onclick = _.bind(this.backToProjectList, this);
+        task_list_dom.appendChild(project.task_list.getDom());
+
+        this.container.show(task_list_dom);
       }
+    },
+    backToProjectList : function() {
+      this.container.show(this);
     }
   };
   this.exports(ListView);

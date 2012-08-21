@@ -8,21 +8,27 @@ modit('purejstodoist', ['util'], function(util) {
   var doc = document;
 
   function Container(p_data) {
-    var data = p_data || {};
-    this.dom = data.id ? 
-        doc.getElementById(data.id) : doc.getElementsByTagName('body')[0];
+    var data = p_data || {},
+      ListView = purejstodoist.project.ListView;
+
+    if (data.dom) {
+      this.dom = data.dom;
+    } else {
+      this.dom = data.id ? 
+          doc.getElementById(data.id) : doc.getElementsByTagName('body')[0];
+    }
+    this.list_view = data.list_view || new ListView({container: this});
+    this.list_view.container = this;
     this.init();
   }
 
   Container.prototype = {
-    show: function(dom_to_show) {
-      this.dom.replaceChild(dom_to_show, this.dom.firstChild);
+    show: function(component) {
+      this.dom.replaceChild(component.getDom ? component.getDom() : component, this.dom.firstChild);
     },
     init: function() {
       if (this.dom) {
-        var ListView = purejstodoist.project.ListView,
-          list_view = new ListView();
-        this.dom.appendChild(list_view.getDom());
+        this.dom.appendChild(this.list_view.getDom());
       }
     }
   };

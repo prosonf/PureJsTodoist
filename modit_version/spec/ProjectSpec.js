@@ -45,14 +45,18 @@ describe("Project", function() {
 });
 
 describe("ListView", function() {
+  "use strict";
   var Project = purejstodoist.project.Project,
     ListView = purejstodoist.project.ListView,
-    projectA, projectB, listView;
+    projectA, projectB, listView, container;
 
   beforeEach(function() {
     projectA = new Project({id: 1, name: "a_project"});
     projectB = new Project({id: 2, name: "b_project"});
-    listView = new ListView({items: [projectA, projectB]});
+    listView = new ListView({
+      items: [projectA, projectB],
+      desc: 'ProjectSpec ListView'
+    });
   });
 
   it("should render all projects", function() {
@@ -76,9 +80,31 @@ describe("ListView", function() {
     expect(listView.getDom().innerHTML).toContain(new_name);
   });
 
-  it("should render a project's task list when clicking that project", function() {
-    spyOn(listView, 'showTaskList');
-    listView.getDom().getElementsByTagName('span')[0].onclick();
-    expect(listView.showTaskList).toHaveBeenCalled();
+  it("should show its task list when clicking that project", function() {
+    spyOn(listView, 'showTaskList').andCallThrough();
+    container = new purejstodoist.Container({
+      dom: document.createElement('div'),
+      list_view: listView
+    });
+    spyOn(container, 'show').andCallThrough();
+    container.dom.getElementsByTagName('span')[0].onclick();
+    expect(listView.showTaskList).toHaveBeenCalledWith(projectA);
+    expect(container.show).toHaveBeenCalled();
+  });
+
+  it("and should go back when clicking back button", function() {
+    spyOn(listView, 'showTaskList').andCallThrough();
+    container = new purejstodoist.Container({
+      dom: document.createElement('div'),
+      list_view: listView
+    });
+    spyOn(container, 'show').andCallThrough();
+    container.dom.getElementsByTagName('span')[0].onclick();
+    expect(listView.showTaskList).toHaveBeenCalledWith(projectA);
+    expect(container.show).toHaveBeenCalled();
+    expect(container.show.calls.length).toBe(1);
+
+    container.dom.getElementsByTagName('button')[0].onclick();
+    expect(container.show.calls.length).toBe(2);
   });
 });

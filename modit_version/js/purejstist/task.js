@@ -51,13 +51,14 @@ modit("purejstodoist.task", ['util'], function(util) {
   }
   this.exports(Task);
 
-  var html_list_template = '<ul id="tasks">#{name}\'s Tasks:</ul>';
+  var html_list_template = '<ul id="tasks">Tasks:</ul>';
   var html_list_item_template = '<li></li>';
   function TaskList(p_data) {
     var data = p_data || {};
     this.items = data.items || [];
 
     this.dom = null;
+    this.project = data.project || {};
   };
   TaskList.prototype = {
     toHtml : function() {
@@ -67,7 +68,7 @@ modit("purejstodoist.task", ['util'], function(util) {
       if (!this.dom) {
         var this_ = this;
         var item_templ = util.htmlToDom(html_list_item_template);
-        var list_templ = util.htmlToDom(html_list_template);
+        var list_templ = util.htmlToDom(util.substitute(html_list_template, this.project));
         var data = _.each(this.items, function(item) {
           var item_dom = item_templ.cloneNode(true);
           item_dom.appendChild(item.getDom());
@@ -77,7 +78,7 @@ modit("purejstodoist.task", ['util'], function(util) {
         this.createElementDOM.appendChild(Task.getDOMForCreate(function(new_item) {this_.appendItem(new_item);}));
         list_templ.appendChild(this.createElementDOM);
         this.dom = list_templ;
-      }
+     }
       return this.dom;
     },
     appendItem : function(new_item) {
